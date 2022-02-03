@@ -1,5 +1,5 @@
 
-package com.mycompany.cantera.taller1;
+package taller1;
 
 import java.util.Date;
 

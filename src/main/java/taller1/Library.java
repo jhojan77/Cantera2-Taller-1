@@ -1,5 +1,5 @@
 
-package com.mycompany.cantera.taller1;
+package taller1;
 /**
  * representa una clase biblioteca con sus atributos y metodos
  * @author jhojan hoyos

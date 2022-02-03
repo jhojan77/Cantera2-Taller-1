@@ -1,5 +1,5 @@
 
-package com.mycompany.cantera.taller1;
+package taller1;
 /**
  * representa una clase peliculas con sus atributos y un metodo para evaluar la aceptacion por el publico
  * @author jhojan hoyos
