@@ -1,13 +1,33 @@
 
 package com.mycompany.cantera.taller1;
-
+/**
+ * representa una clase biblioteca con sus atributos y metodos
+ * @author jhojan hoyos
+ */
 public class Library {
-    //atributos de la clase biblioteca
+    /**
+     * representa el id unico para un prestamo de un libro
+     */
     protected int idRent;
+    /**
+     * representa el dato de la persona que alquila un libro
+     */
     private String namePersonRent;
+    /**
+     * representa el titulo del libro
+     */
     private String bookTitle;
+    /**
+     * representa el nombre del autor del libro
+     */
     private String authorBook;
+    /**
+     * representa los ejemplares correpondientes a un libro
+     */
     private int exemplary;
+    /**
+     * representa los libros rentados a un usuario
+     */
     private int rentedBooks;
     
     //Métodos get/set de los atributos
@@ -60,9 +80,10 @@ public class Library {
         this.rentedBooks = rentedBooks;
     }
     
-    //Este método PRESTAMO se usara realizar el prestamo de un libro 
-    //No se puede prestar un libro sino hay algun ejemplar disponible
-    //Se pone condicion de arrojar verdadero si se ha podido realizar y falso en caso contrario.
+   /**
+    * realiza el prestamo de un libro, validadando si hay existencias
+    * @return el libro a prestamo
+    */
     public boolean loanBook() {
         boolean rent = true;
         if (rentedBooks < exemplary) {
@@ -73,9 +94,10 @@ public class Library {
         return rent;
     }
 
-    //este método DEVOLUCION se usara para la devolución de un libro
-    //No se puede devolver un libro que no se haya prestado
-    //la idea tambien es que que al devolver un libro se este se reste del acumulado de libros en prestamo
+    /**
+     * realiza la devolucion de un libro prestado,validadando que dicho libro exista en prestamos y lo resta del total de libros prestados
+     * @return la devolucion del libro
+     */
     public boolean returnBook() {
         boolean booksReturned = true;
         if (rentedBooks == 0) {

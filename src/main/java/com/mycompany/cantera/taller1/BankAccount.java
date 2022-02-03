@@ -1,26 +1,51 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.cantera.taller1;
-
-import java.util.ArrayList;
-
 /**
- *
- * @author tatiana
+ * representa una clase cuenta bancaria con sus atributos y metodos
+ * @author jhojan hoyos
  */
+
 public class BankAccount {
-    private String name;
-    private ArrayList<String> color;
+    /**
+     * representa el numero de cuenta bancaria de un usuario
+     */
+    private int accountNumber;
+    /**
+     * representa el tipo de cuenta(ahorros/corriente)
+     */
+    private int typeAccount;
+    /**
+     * representa el estado de una cuenta
+     */
+    protected Boolean activated;
 
-    public ArrayList<String> getColor() {
-        return color;
+    //Métodos get/set de los atributos
+    public int getAccountNumber() {
+        return accountNumber;
     }
 
-    public void setColor(ArrayList<String> color) {
-        this.color = color;
+      public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
     }
+      
+     public int getTypeAccount() {
+        return typeAccount;
+    }
+
+    public void setTypeAccount(int typeAccount) {
+        this.typeAccount = typeAccount;
+    }
+    
+    public Boolean getActivated() {
+        return activated;
+    }
+
+    public void setActivated(Boolean activated) {
+        this.activated = activated;
+    }
+    
+
+    
     
     
 }

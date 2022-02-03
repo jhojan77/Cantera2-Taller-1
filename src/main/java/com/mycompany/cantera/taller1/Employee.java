@@ -1,15 +1,38 @@
 
 package com.mycompany.cantera.taller1;
 
-
+/**
+ * representa una clase empleado con sus atributos y metodos
+ * @author jhojan hoyos
+ */
 public class Employee {
-  //atributos de clase empleado
+  /**
+     * representa el id unico para un empleado
+     */
     private String dni;
+    /**
+     * representa la edad de un empleado
+     */
     private int age;
+    /**
+     * representa el nombre del empleado
+     */
     private String nombre;
+    /**
+     * representa el salario mensual de un empleado
+     */
     private double salary;
+    /**
+     * representa las horas extras trabajadas por un empleado
+     */
     private int overtime;
+    /**
+     * representa el valor total de la hora extra 
+     */
     private double overtimeValue;
+    /**
+     * representa la cuenta unica de nomina del empleado
+     */
     protected double payrollAccount;
 
     //Métodos get/set de los atributos
@@ -69,12 +92,18 @@ public class Employee {
         this.payrollAccount = payrollAccount;
     }
    
-    //metodo para calcular el pago total por horas extras trabajadas
+    /**
+     * calcula el valor total a pagar a un empleado por sus horas extras trabajadas
+     * @return 
+     */
     public double calculateOvertimeAmount(){
         return overtime * overtimeValue;
     }
     
-     //metodo para calcular el sueldo total, asi: salario + horas extras del trabajador
+     /**
+      * calcula el salario total mensual de un empleado
+      * @return 
+      */
     public double calculateNetSalary(){
         return salary + calculateOvertimeAmount();
     }

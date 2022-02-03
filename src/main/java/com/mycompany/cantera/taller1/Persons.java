@@ -3,14 +3,34 @@ package com.mycompany.cantera.taller1;
 
 import java.util.Date;
 
-
+/**
+ * representa una clase personas con sus atributos y metodos
+ * @author jhojan hoyos
+ */
 public class Persons {
-     //atributos de clase empleado
+     /**
+     * representa el nombre del usuario
+     */
     private String name;
+    /**
+     * representa el primer apellido del usuario
+     */
     private String lastName1 ;
+    /**
+     * representa el segundo apellido del usuario
+     */
     private String lastName2;
+    /**
+     * representa la fecha de cumpleaños del usuario
+     */
     private Date dateBirth;
+    /**
+     * representa la altura del usuario
+     */
     private Float height;
+    /**
+     * representa la edad del usuario
+     */
     protected int age;
     
     
