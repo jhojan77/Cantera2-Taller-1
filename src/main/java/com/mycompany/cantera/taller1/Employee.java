@@ -94,7 +94,7 @@ public class Employee {
    
     /**
      * calcula el valor total a pagar a un empleado por sus horas extras trabajadas
-     * @return 
+     * @return Total neto a pagar #horas extras * valor de hora extra
      */
     public double calculateOvertimeAmount(){
         return overtime * overtimeValue;
@@ -102,7 +102,7 @@ public class Employee {
     
      /**
       * calcula el salario total mensual de un empleado
-      * @return 
+      * @return salario neto mensual
       */
     public double calculateNetSalary(){
         return salary + calculateOvertimeAmount();
